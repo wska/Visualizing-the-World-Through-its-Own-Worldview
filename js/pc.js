@@ -89,7 +89,7 @@ function loadData(data_url) {
       }
 
 
-      console.log(bounds);
+      //console.log(bounds);
       return d != "Country" && (y[d] = d3.scale.linear()
           //.domain([0, 100])
           .domain([Math.min(0,minBound), Math.max(maxBound,bounds[1])])
