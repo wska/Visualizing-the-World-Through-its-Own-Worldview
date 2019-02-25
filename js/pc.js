@@ -75,6 +75,11 @@ function loadData(data_url) {
 
       
       //console.log(bounds)
+
+      //console.log(bounds)
+
+
+
       if(bounds[1] <= 10){
         maxBound = 10;
       }

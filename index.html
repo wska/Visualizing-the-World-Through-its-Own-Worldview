@@ -41,10 +41,10 @@
     <div class="middle-content">
         <div class="text-container">
             <div class="well">
-            <h3><u>Research question & data aquisition</u></h3>
+            <h3><u>Research question & data acquisition</u></h3>
             <h5>My main curiosity from the WVS data was happiness, and what factors contributed towards it. 
-              I selected 30 arbitary countries(with some bias for familiarity) and picked some attributes from the WVS database that I found relevant, 
-              but I thought it would be interesting to combine it with statistical data to look for interesting correlations. 
+              I selected 30 arbitrary countries(with some bias for familiarity) and picked attributes from the WVS database that I found relevant, 
+              but I thought it would be interesting to combine it with statistical data to look for correlations. 
               So I choose to combine the WVS data with some attributes from Gapminder.org.</h5>
             
           </div>
@@ -52,18 +52,20 @@
          
               <div class="well">
               <h3><u>Data transformation & visual mapping</u></h3>
-              <h5>My choice for visualizing the data was either some form of scatterplot, paralell coordinates or to try to create some sort of interactive map. I liked the idea of being able to see all the attributes at once, and chose to implement it through a set of paralell coordinates.
-      The way the survery was structured was a multiple choice selection form, thus I chose to force it into a binary type of data by classifiying the answer in a "Yes/No", manner.
+              <h5>My choice for visualizing the data was either some form of scatterplot, parallel coordinates or to try to create some sort of interactive map. I liked the idea of being able to see all the attributes at once, and chose to implement it through a set of paralell coordinates.
+                  The way the survery was structured was a multiple choice, and thus I chose to force it into a binary type by classifiying the answer in a "Yes/No", manner.
               </h5>
               <img src="images/Capture.PNG">
-              <h5>Now since all the survey answers could be measured using a simple scale of 0-100, I could use that to combine normalized data from gapminder to get more information out of the data.</h5>
+              <h5>Now since all the survey answers could be measured using a simple numbered scales, I could use that to compare data from gapminder.</h5>
               </div>
             </div>
 
       <h2 id="period" style="margin: 14px;">Data timeline</h2>
       <div class="col-12 svg"> </div>
 
-      <p class="info"> Country statistics in percentage. Missing values from the WVS data were replaced by 0's. The parallel coordinates are interactive by brushing or moving the axes. Mouseover for country name. <br>Gapminder data is always the last year available for of each wave.</p>
+      <p class="info"> Country statistics in percentage. Missing values from the WVS data were replaced by 0's. The parallel coordinates are interactive by brushing or moving the axes. 
+        Mouseover for country name. <br>
+        Gapminder data is always the last year available for of each wave.</p>
     
 
       <div>
@@ -81,7 +83,7 @@
         <div class="well">
           <h2><u>Discovery processes 1</u></h2>
           <h3>How has happiness evolved over time?</h3>
-          <h5>Happiness is one of those very subjective terms that everyone can still strongly relate to. I have a general belief that humanity as a whole has gone to great lengths to try make the average life better over time. Happiness should be unconditional, in my opinion, but what does the data say?</h5>
+          <h5>Happiness is one of those very subjective terms. I have a general belief that humanity as a whole has gone to great lengths to try make the average life better over time. Happiness should be unconditional, in my opinion, but what does the data say?</h5>
 
         <img src="images/happy1.PNG">
          
@@ -96,29 +98,35 @@
             <h3>Are there are factors that seems to have a strong correlation with happiness?</h3>
             <h5>There are a lot of attributes that could contribute to whenever an individual consider themselves happy or not.
                Most of these could be hard to quanity on a larger scale, since they tend to be extremely subjective.
-               But it is still interesting to take a look at the data provided from the WVS and gapminder to see if there are any strong correlations.
+               But it is still interesting to take a look at the data provided from the WVS and Gapminder to see if there are any strong correlations.
               Something that stood out was the correlation between happiness and GDP. </h5>
             
            <img src="images/happymoney.PNG">
-           <h5>There seem to be a general trend for increased happiness the higher the average salary is. Well except for Norway. 
+           <h5>There seem to be a general trend for increased happiness the higher the GDP is. Well except for Norway. 
              But there might be an diminishing returns for buying happiness. 
              Although are we not told that money cant buy happiness?
+
+             Overall it can be quite hard distinguish factors outside of attributes such as the importance of family and work values.
             </h5>
+            <img src="images/happyconclusion.png">>
            
             <h3>Results</h3>
-            <h5>There seem to be some general trends between certain attributes and the feelings of happiness within the world, such as GDP. </h5>
+            <h5>There seem to be some general trends between certain attributes and the feelings of happiness within the world, such as GDP and family/work values. 
+              Also quite interesting to see the high happiness meter with a generally low life satisfaction across the board. Though I guess it is within our nature to want for more.</h5>
           </div>
 
         <h3><u>Learnings</u></h3>
-        <h5>This course is technically the first time I have actually goten to do web programming.
-           I have goten to learn a lot about html, css and javascript, aswell as how to utilize powerful libaries such as D3.js to convery information in a more intuitive way.
-          I also got to try my hand at the task of visualizing a plethora of variables at the same time. Looking back at it, I think I missed the oppertunity of doing something with shapes,
-           but I think I might actually follow this up with my own project using data visualization. There is still a lot of great data in the gapminder database... we will see what happens ^^.
+        <h5>This course is the first time I have actually gotten to do web programming.
+           I have learned a lot about html, css and javascript, and how to utilize powerful libaries such as D3.js to convery information in a more intuitive way.
+          I also got to try my hand at the task of visualizing a plethora of variables at once. Looking back at it, I think I missed the oppertunity of doing something with shapes,
+           but I think I might actually follow this up with my own visualization project. There is still a lot of great data in the gapminder database... we will see what happens ^^.
         
         </h5>
         <br>
         <p> Hosting done through <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
         <p>Parallel Coordinate template that was used by: <a href="https://bl.ocks.org/jasondavies/1341281" target="_blank">Jason Davies</a></p>
+        <p> Data from <a href="http://www.worldvaluessurvey.org/wvs.jsp" target="_blank">WVS</a> and  <a href="https://www.gapminder.org/" target="_blank">Gapminder</a></p>
+        
       </div>
     </div>
     <script type="text/javascript" src="js/pc.js"></script>
